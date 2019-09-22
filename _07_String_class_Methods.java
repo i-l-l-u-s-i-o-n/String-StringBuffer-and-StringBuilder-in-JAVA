@@ -9,6 +9,15 @@ public class _07_String_class_Methods {
 
         // Some most commonly used String class methods are ->
 
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Calling these methods will CREATE THE NEW OBJECT IN HEAP area, if it is not present in the heap, else
+        // just assigns the reference to the existing object.
+
+        // In case of string literals(such as s.concat("This is a literal")), a new object is created on SCP, if not existing already
+        // else only the reference will be assigned to same object.
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
         String s =new String("Shivam");
 
         //1) public char charAt(int index);
