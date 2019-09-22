@@ -1,0 +1,18 @@
+
+///////////////// Difference between StringBuffer and StringBuilder  /////////////////////////////////////////////
+
+
+1) Every method in StringBuffer is SYNCHRONISED.
+   No method in StringBuilder is Synchronised.
+
+
+2) At a time only one thread is allowed to Operate on StringBuffer Object, so it is THREAD SAFE.
+   At a time multiple thread are allowed to operate on StringBuilder object, so it is NOT THREAD SAFE.
+
+
+3) Performance of StringBuffer is relatively LOW as compared to StringBuilder as Only one thread can operate on
+   StringBuffer at a time.
+
+
+4) StringBuffer was introduced in 1.0v( Legacy class ).
+   StringBuilder was introduced in 1.5v
