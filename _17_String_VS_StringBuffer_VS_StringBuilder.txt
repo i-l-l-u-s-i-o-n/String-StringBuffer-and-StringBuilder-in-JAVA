@@ -1,0 +1,15 @@
+
+
+/////////////////// String VS StringBuffer VS StringBuilder  ////////////////////////////////////
+
+
+When the content is fixed and won't change frequently, we should go for STRING.
+
+When the content keeps on changing frequently, and THREAD SAFETY is required, then we should go for STRING_BUFFER.
+
+When the content keeps on changing frequently, and THREAD SAFETY is NOT required, then we should go for STRING_BUILDER.
+
+
+
+/////// String class is THREAD SAFE as it IMMUTABLE, so no thread can Manipulate it's content.
+/////// Similarly other Immutable class (WRAPPER CLASS) is also THREAD SAFE.
