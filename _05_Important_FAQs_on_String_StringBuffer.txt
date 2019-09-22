@@ -1,0 +1,19 @@
+1.) Why SCP concept is applicable to String but not for StringBuffer ?????
+
+
+    String is most commonly used(regular customer :) ) Object in Java, so it has some special privileges for memory management.
+    While SB is rarely used so SCP concept is not required for SB.
+
+
+
+2.) Why String objects are Immutable and StringBuffer objects are Mutable ?????
+
+    Because of SCP, in String, same Object can be reused by assigning multiple references. So there may be a chance that one
+    reference try to change the content of the object!! So to overcome this problem, Java People made String Class IMMUTABLE.
+    In case of SB, no SCP concept is applicable, so it is not required to make SB IMMUTABLE, so SB is MUTABLE.
+
+
+
+3.) In addition to String Objects, any other object is IMMUTABLE in JAVA ??????
+
+    Yes, all WRAPPER class objects are also IMMUTABLE.
